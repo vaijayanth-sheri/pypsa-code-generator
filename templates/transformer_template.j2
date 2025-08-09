@@ -1,0 +1,9 @@
+network.add("Transformer", "{{ name }}",
+    bus0="{{ bus0 }}",
+    bus1="{{ bus1 }}",
+    s_nom={{ s_nom }},
+    x={{ x }},
+    r={{ r }},
+    tap_ratio={{ tap_ratio }}{% if comment %},
+    comment="{{ comment }}"{% endif %}
+)

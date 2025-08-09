@@ -1,0 +1,9 @@
+network.add("Line", "{{ name }}",
+    bus0="{{ bus0 }}",
+    bus1="{{ bus1 }}",
+    s_nom={{ s_nom }},
+    x={{ x }},
+    r={{ r }},
+    length={{ length }}{% if comment %},
+    comment="{{ comment }}"{% endif %}
+)

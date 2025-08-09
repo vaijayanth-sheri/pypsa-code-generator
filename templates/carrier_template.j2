@@ -1,0 +1,4 @@
+network.add("Carrier", "{{ name }}",
+    co2_emissions={{ co2_emissions }}{% if comment %},
+    comment="{{ comment }}"{% endif %}
+)

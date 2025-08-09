@@ -1,0 +1,10 @@
+network.add("StorageUnit", "{{ name }}",
+    bus="{{ bus }}",
+    carrier="{{ carrier }}",
+    p_nom={{ p_nom }},
+    max_hours={{ max_hours }},
+    efficiency_store={{ efficiency_store }},
+    efficiency_dispatch={{ efficiency_dispatch }},
+    cyclic_state_of_charge={{ "True" if cyclic_state_of_charge else "False" }}{% if comment %},
+    comment="{{ comment }}"{% endif %}
+)

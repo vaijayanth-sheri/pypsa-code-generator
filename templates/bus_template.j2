@@ -1,0 +1,5 @@
+network.add("Bus", "{{ name }}",
+    carrier="{{ carrier }}",
+    v_nom={{ v_nom }}{% if comment %},
+    comment="{{ comment }}"{% endif %}
+)

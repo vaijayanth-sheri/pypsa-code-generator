@@ -1,0 +1,11 @@
+network.add("Generator", "{{ name }}",
+    bus="{{ bus }}",
+    carrier="{{ carrier }}",
+    p_nom={{ p_nom }},
+    marginal_cost={{ marginal_cost }}{% if mode == "Advanced" %}
+    ,efficiency={{ efficiency }}
+    ,p_min_pu={{ min_pu }}
+    ,p_max_pu={{ max_pu }}{% if ramp_up %}
+    ,ramp_limit_up={{ ramp_up }}{% endif %}{% if ramp_down %}
+    ,ramp_limit_down={{ ramp_down }}{% endif %}{% endif %}
+)

@@ -1,0 +1,9 @@
+network.add("Link", "{{ name }}",
+    bus0="{{ bus0 }}",
+    bus1="{{ bus1 }}",
+    carrier="{{ carrier }}",
+    p_nom={{ p_nom }},
+    efficiency={{ efficiency }},
+    marginal_cost={{ marginal_cost }}{% if comment %},
+    comment="{{ comment }}"{% endif %}
+)

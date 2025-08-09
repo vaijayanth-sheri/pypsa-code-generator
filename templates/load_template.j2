@@ -1,0 +1,5 @@
+network.add("Load", "{{ name }}",
+    bus="{{ bus }}",
+    p_set={{ p_set }}{% if comment %},
+    comment="{{ comment }}"{% endif %}
+)
